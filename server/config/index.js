@@ -4,10 +4,11 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const connection = mysql.createPool({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASS,
-  database: process.env.DB_NAME,
+  host: "pmya.canary.lmesacademy.net",
+  port: 25060,
+  user: "yugi",
+  password: "dhwiOCh4epPn8tUf",
+  database: "06_yugi",
 });
 
 export const promisePool = connection.promise();
