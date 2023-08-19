@@ -5,7 +5,7 @@ import cors from "cors";
 import router from "./routes/tasks.js";
 
 const APP = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 APP.use(cors());
 
